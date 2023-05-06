@@ -50,15 +50,16 @@ section {
 .btn {
     display: inline-block;
     padding: 20px 30px;
-    background-color: #30fe6c;
+    background-color: #3fc364d3;
     color: black;
-    font-size: 1.15rem;
+    font-size: 20px;
     margin-top: 30px;
     border-radius: 15px;
+    font-weight: bolder;
 }
 
 .btn:hover {
-    background-color: #30fe6ad3;
+    background-color: rgb(127, 232, 127);
 }
 
 /* HEADER */
@@ -120,8 +121,11 @@ header nav ul li:hover a {
 }
 
 @keyframes myprofile {
-    50%{box-shadow: 0 8px 32px 0 rgba(48, 254, 108, 0.37);}
+    50% {
+        box-shadow: 0 8px 32px 0 rgba(48, 254, 108, 0.37);
+    }
 }
+
 #home .profile:hover {
     transform: scale(1.1);
 }
@@ -135,24 +139,14 @@ header nav ul li:hover a {
 
 #home .content h1 {
     font-size: 5rem;
-    font-family: 'Dancing Script', cursive;
     color: #30fe6c;
     background: rgba(8, 8, 8, 0.1);
-    
-    backdrop-filter: blur(3px);
-    -webkit-backdrop-filter: blur(3px);
-    border-radius: 10px;
-    border: 1px solid rgba(255, 255, 255, 0.18);
-    animation: mymove 3s infinite;
 }
 
-@keyframes mymove{
-    50%{box-shadow: 0 8px 32px 0 rgba(48, 254, 108, 0.37);}
-}
 #home .content p {
     font-size: 1.25rem;
     max-width: 500px;
-    text-align: end;
+    text-align: justify;
 }
 
 /* SERVICE */
@@ -200,12 +194,7 @@ header nav ul li:hover a {
     align-items: center;
     border: 1px solid transparent;
     transition: 0.5s;
-    background: rgba(8, 8, 8, 0.1);
-    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-    backdrop-filter: blur(3px);
-    -webkit-backdrop-filter: blur(3px);
-    border-radius: 10px;
-    border: 1px solid rgba(255, 255, 255, 0.18);
+
 }
 
 #services .content .box:hover {
