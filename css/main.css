@@ -113,6 +113,16 @@ header nav ul li:hover a {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  animation-name: Home-top;
+  animation-duration: 10s;
+  transition-duration: 50s;
+}
+
+@keyframes Home-top {
+  to { 
+    min-height: 100vh;
+  }
+  from{ margin-top: 95vh;}
 }
 
 #home .profile {
@@ -245,16 +255,6 @@ animation: slide 12s steps(4) infinite;
   justify-content: center;
   align-items: center;
   padding: 100px;
-  animation-name: services-top;
-  animation-duration: 2s;
-  transition-duration: 2s;
-}
-
-@keyframes services-top {
-  from { 
-    margin-top: 10%;
-  }
-  to { margin-right: 0;}
 }
 
 #services .texts {
